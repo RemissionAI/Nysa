@@ -1,0 +1,140 @@
+:root {
+  /* Typography */
+  --font-family-primary: "Kumbh Sans", sans-serif;
+  --font-family-secondary: 'Cardo', sans-serif;
+  
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-md: 1rem;       /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 1.875rem;  /* 30px */
+  --font-size-4xl: 2.25rem;   /* 36px */
+  
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Line Heights */
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+  
+  /* Combined Font Styles */
+  --text-xs: var(--font-size-xs) / var(--line-height-normal) var(--font-family-primary);
+  --text-sm: var(--font-size-sm) / var(--line-height-normal) var(--font-family-primary);
+  --text-md: var(--font-size-md) / var(--line-height-normal) var(--font-family-primary);
+  --text-lg: var(--font-size-lg) / var(--line-height-normal) var(--font-family-primary);
+  --text-xl: var(--font-size-xl) / var(--line-height-normal) var(--font-family-primary);
+  --text-2xl: var(--font-size-2xl) / var(--line-height-tight) var(--font-family-primary);
+  --text-3xl: var(--font-size-3xl) / var(--line-height-tight) var(--font-family-primary);
+  --text-4xl: var(--font-size-4xl) / var(--line-height-tight) var(--font-family-primary);
+
+  /* Text Styles with Weights */
+  --text-xs-light: var(--font-weight-light) var(--text-xs);
+  --text-xs-regular: var(--font-weight-normal) var(--text-xs);
+  --text-xs-medium: var(--font-weight-medium) var(--text-xs);
+  --text-xs-semibold: var(--font-weight-semibold) var(--text-xs);
+  --text-xs-bold: var(--font-weight-bold) var(--text-xs);
+
+  --text-sm-light: var(--font-weight-light) var(--text-sm);
+  --text-sm-regular: var(--font-weight-normal) var(--text-sm);
+  --text-sm-medium: var(--font-weight-medium) var(--text-sm);
+  --text-sm-semibold: var(--font-weight-semibold) var(--text-sm);
+  --text-sm-bold: var(--font-weight-bold) var(--text-sm);
+
+  --text-md-light: var(--font-weight-light) var(--text-md);
+  --text-md-regular: var(--font-weight-normal) var(--text-md);
+  --text-md-medium: var(--font-weight-medium) var(--text-md);
+  --text-md-semibold: var(--font-weight-semibold) var(--text-md);
+  --text-md-bold: var(--font-weight-bold) var(--text-md);
+
+  --text-lg-light: var(--font-weight-light) var(--text-lg);
+  --text-lg-regular: var(--font-weight-normal) var(--text-lg);
+  --text-lg-medium: var(--font-weight-medium) var(--text-lg);
+  --text-lg-semibold: var(--font-weight-semibold) var(--text-lg);
+  --text-lg-bold: var(--font-weight-bold) var(--text-lg);
+
+  --text-xl-light: var(--font-weight-light) var(--text-xl);
+  --text-xl-regular: var(--font-weight-normal) var(--text-xl);
+  --text-xl-medium: var(--font-weight-medium) var(--text-xl);
+  --text-xl-semibold: var(--font-weight-semibold) var(--text-xl);
+  --text-xl-bold: var(--font-weight-bold) var(--text-xl);
+
+  --text-2xl-regular: var(--font-weight-normal) var(--text-2xl);
+  --text-2xl-medium: var(--font-weight-medium) var(--text-2xl);
+  --text-2xl-semibold: var(--font-weight-semibold) var(--text-2xl);
+  --text-2xl-bold: var(--font-weight-bold) var(--text-2xl);
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;  /* 4px */
+  --spacing-sm: 0.5rem;   /* 8px */
+  --spacing-md: 1rem;     /* 16px */
+  --spacing-lg: 1.5rem;   /* 24px */
+  --spacing-xl: 2rem;     /* 32px */
+  
+  /* Border Radius */
+  --border-radius-sm: 0.25rem;  /* 4px */
+  --border-radius-md: 0.5rem;   /* 8px */
+  --border-radius-lg: 1rem;     /* 16px */
+  --border-radius-full: 9999px; /* For circular elements */
+}
+
+/* Light mode styles */
+
+.light-mode body {
+  /* Color Palette */
+  --color-primary-light: #333333;
+  --color-primary: #000000;
+  --color-primary-dark: #000000;
+  
+  --color-secondary-light: #F5F5F5;
+  --color-secondary: #FFFFFF;
+  --color-secondary-dark: #E0E0E0;
+  
+  --color-background: #FFFFFF;
+  --color-surface: #F5F5F5;
+  
+  --color-text-primary: #000000;
+  --color-text-secondary: #333333;
+  
+  --color-error: #D0021B;
+  --color-success: #4CAF50;
+  --color-warning: #F5A623;
+  --color-info: #4A90E2;
+
+}
+
+/* Dark mode styles */
+.dark-mode body {
+  --color-primary-light: #F5F5F5;
+  --color-primary: #FFFFFF;
+  --color-primary-dark: #E0E0E0;
+  
+  --color-secondary-light: #4A4A4A;
+  --color-secondary: #333333;
+  --color-secondary-dark: #1A1A1A;
+  
+  --color-background: #000000;
+  --color-surface: #1A1A1A;
+  
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #CCCCCC;
+  
+  --color-error: #FF4D4D;
+  --color-success: #66BB6A;
+  --color-warning: #FFC668;
+  --color-info: #64B5F6;
+}
+
+/* Smooth theme switching */
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
