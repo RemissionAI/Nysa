@@ -11,6 +11,9 @@
 
 .rotate-container {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
     border-radius: var(--border-radius-full);
 
@@ -21,21 +24,22 @@
                 rgba(255, 255, 255, 0) 0%,
                 rgb(102, 102, 102) 50%,
                 rgba(255, 255, 255, 0) 100%);
-        height: 100%;
-        width: 100px;
+        width: 100%;
+        height: 500px;
         transform: translate(0);
         position: absolute;
-        animation: rotate 5s linear forwards infinite;
+        animation: rotate 5s linear infinite;
         z-index: 0;
         top: 50%;
-        transform-origin: top center;
+        transform-origin: bottom center;
     }
 
     .inner {
         position: relative;
         z-index: 10;
         width: 100%;
-        margin: .5px;
+        margin-top: .8px;
+        margin-bottom: .4px;
     }
 
 }

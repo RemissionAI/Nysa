@@ -24,7 +24,7 @@ const sendMessage = () => {
 <style lang="scss" scoped>
 .message-input {
     display: flex;
-    padding: 5px;
+    padding: 5px 10px;
     background-color: var(--color-surface);
     border-radius: var(--border-radius-full);
     overflow: hidden;
