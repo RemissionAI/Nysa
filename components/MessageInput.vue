@@ -54,7 +54,6 @@ const sendMessage = () => {
     .send-button {
         background-color: var(--color-background);
         color: var(--color-text-primary);
-        border: none;
         border-radius: var(--border-radius-full);
         width: 40px;
         height: 40px;
@@ -62,6 +61,11 @@ const sendMessage = () => {
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        border: 1px solid var(--color-secondary);
+
+        &:hover{
+            border-color: var(--color-secondary-light);
+        }
     }
 }
 </style>

@@ -16,6 +16,7 @@
     justify-content: center;
     overflow: hidden;
     border-radius: var(--border-radius-full);
+    width: 100%;
 
     &::before {
         content: "";
@@ -25,10 +26,10 @@
                 rgb(102, 102, 102) 50%,
                 rgba(255, 255, 255, 0) 100%);
         width: 100%;
-        height: 500px;
+        height: 200px;
         transform: translate(0);
         position: absolute;
-        animation: rotate 5s linear infinite;
+        animation: rotate 6s linear forwards infinite;
         z-index: 0;
         top: 50%;
         transform-origin: bottom center;
@@ -39,7 +40,7 @@
         z-index: 10;
         width: 100%;
         margin-top: .8px;
-        margin-bottom: .4px;
+        margin-bottom: .32px;
     }
 
 }

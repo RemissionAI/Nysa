@@ -11,7 +11,7 @@
   --font-size-xl: 1.25rem;    /* 20px */
   --font-size-2xl: 1.5rem;    /* 24px */
   --font-size-3xl: 1.875rem;  /* 30px */
-  --font-size-4xl: 2.25rem;   /* 36px */
+  --font-size-4xl: 3.25rem;   /* 36px */
   
   /* Font Weights */
   --font-weight-light: 300;
@@ -70,6 +70,11 @@
   --text-2xl-medium: var(--font-weight-medium) var(--text-2xl);
   --text-2xl-semibold: var(--font-weight-semibold) var(--text-2xl);
   --text-2xl-bold: var(--font-weight-bold) var(--text-2xl);
+
+  --text-3xl-regular: var(--font-weight-normal) var(--text-3xl);
+  --text-3xl-medium: var(--font-weight-medium) var(--text-3xl);
+  --text-3xl-semibold: var(--font-weight-semibold) var(--text-3xl);
+  --text-3xl-bold: var(--font-weight-bold) var(--text-3xl);
 
   /* Spacing */
   --spacing-xs: 0.25rem;  /* 4px */
@@ -137,4 +142,19 @@ body {
   background-color: var(--color-background);
   color: var(--color-text-primary);
   transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: var(--font-family-primary);
+}
+
+.heading {
+  font-family: var(--font-family-secondary);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  color: inherit;
 }
