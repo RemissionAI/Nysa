@@ -11,21 +11,23 @@ const sendMessage = () => {
 </script>
 
 <template>
-    <div class="message-input">
-        <input v-model="inputText" @keyup.enter="sendMessage" type="text" placeholder="What can I help you with?" />
-        <button @click="sendMessage" class="send-button">
-            <Icon name="i-heroicons-paper-airplane" size="large" />
-        </button>
-    </div>
+    <RotateContainer>
+        <div class="message-input">
+            <input v-model="inputText" @keyup.enter="sendMessage" type="text" placeholder="What can I help you with?" />
+            <button @click="sendMessage" class="send-button">
+                <Icon name="i-heroicons-paper-airplane" size="large" />
+            </button>
+        </div>
+    </RotateContainer>
 </template>
 
 <style lang="scss" scoped>
 .message-input {
     display: flex;
+    padding: 5px;
     background-color: var(--color-surface);
     border-radius: var(--border-radius-full);
     overflow: hidden;
-    padding: 5px 10px;
     transition: border 0.1s ease;
     border: 1.4px solid var(--color-secondary);
 
